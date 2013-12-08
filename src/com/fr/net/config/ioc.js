@@ -14,5 +14,21 @@ var ioc = {
                                 refer : 'manageService'
                         }
                 }
-        }
+        },
+        newsService : {
+            type : "com.fr.net.manage.service.NewsServiceImpl",
+            fields : {
+                    dao : {
+                            refer : 'dao'
+                    }
+            }
+        },
+	    newsAction : {
+	            type : "com.fr.net.manage.action.NewsAction",
+	            fields : {
+	            	newsService : {
+	                            refer : 'newsService'
+	                    }
+	            }
+	    }
 };

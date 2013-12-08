@@ -17,15 +17,13 @@
 <meta name="Author" content="0431" />
 <meta name="keywords" content="魔码网络" />
 <meta name="description" content="魔码网络" />
-<LINK href="master.css"
-	tppabs="http://900054.wap.94more.com/3g/css/master.css" rel=stylesheet>
+<LINK href="master.css" tppabs="/aiweike/css/master.css" rel=stylesheet>
 <script language="JavaScript" type="text/javascript"
-	src="jquery-1.6.4.min.js"
-	tppabs="http://900054.wap.94more.com/3g/common/js/jquery-1.6.4.min.js"></script>
-<script language="JavaScript" type="text/javascript" src="nav.js"
-	tppabs="http://900054.wap.94more.com/3g/common/js/nav.js"></script>
-<script language="JavaScript" type="text/javascript" src="search.js"
-	tppabs="http://900054.wap.94more.com/3g/common/js/search.js"></script>
+	src="/aiweike/js/jquery.js"></script>
+<script language="JavaScript" type="text/javascript"
+	src="/aiweike/js/nav.js"></script>
+<script language="JavaScript" type="text/javascript"
+	src="/aiweike/js/search.js""></script>
 <title>最新资讯_魔码网络</title>
 </head>
 
@@ -97,9 +95,8 @@
 			</c:forEach>
 		</ul>
 		<p class="clear"></p>
-		<div class="pages">
-			<span id="pre" style="cursor: pointer;">pre</span> <span>all
-				page 1/3</span> <span id="next" style="cursor: pointer;">next</span>
+		<div class="pages" style="width: 250px;">
+			<span id="pre" style="cursor: pointer;">pre</span> <span>1/3</span> <span id="next" style="cursor: pointer;">next</span>
 			<div class="clear"></div>
 		</div>
 	</div>

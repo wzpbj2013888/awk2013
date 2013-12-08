@@ -6,10 +6,9 @@ import org.nutz.mvc.annotation.Ok;
 @At("/manage")
 public class IndexAction {
 	  
-//	@At("/toIndex")
-//	@Ok("jsp:view.manage.index")
-//	public String toManageIndex(){
-//		return "model";
-//	}
-
+	@At("/toIndex")
+	@Ok("jsp:view.manage.index")
+	public String toManageIndex(){
+		return "model";
+	}
 }

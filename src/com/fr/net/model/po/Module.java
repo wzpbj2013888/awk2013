@@ -24,6 +24,10 @@ public class Module implements Serializable {
 	@Column
 	private String createtime;
 	@Column
+	private String updateperson;
+	@Column
+	private String updatetime;
+	@Column
 	private String delperson;
 	@Column
 	private String deltime;
@@ -71,6 +75,17 @@ public class Module implements Serializable {
 	public void setCreatetime(String createtime) {
 		this.createtime = createtime;
 	}
-	
+	public String getUpdateperson() {
+		return updateperson;
+	}
+	public void setUpdateperson(String updateperson) {
+		this.updateperson = updateperson;
+	}
+	public String getUpdatetime() {
+		return updatetime;
+	}
+	public void setUpdatetime(String updatetime) {
+		this.updatetime = updatetime;
+	}
 	
 }

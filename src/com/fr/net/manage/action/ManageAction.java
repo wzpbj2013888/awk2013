@@ -18,7 +18,7 @@ public class ManageAction {
 	 
 	@At("/modellist")
 	@Ok("jsp:view.manage.modellist")
-	@Fail("jsp:view.index.error")
+	@Fail("jsp:view.system.error")
 	public List<Module> toManageIndex(){
 		return manageService.getModulePage();
 	}
