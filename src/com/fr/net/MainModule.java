@@ -1,20 +1,15 @@
 package com.fr.net;
 
-import org.nutz.mvc.annotation.At;
-import org.nutz.mvc.annotation.Ok;
+import org.nutz.mvc.annotation.Fail;
+import org.nutz.mvc.annotation.IocBy;
+import org.nutz.mvc.annotation.Modules;
+import org.nutz.mvc.annotation.SetupBy;
+import org.nutz.mvc.ioc.provider.JsonIocProvider;
 
+@Modules(scanPackage=true)
+@IocBy(type = JsonIocProvider.class, args = { "com/fr/net/config/dao.js", "com/fr/net/config/ioc.js" })
+@SetupBy(MvcSetup.class)
+@Fail("json")
 public class MainModule {
-	
-	/*
-	@At("/model/*")
-	@Ok("jsp:view.index.hello")
-	public String testApp(String model){
-		return "hello demo";
-	}
-	*/
-	@At("/model/*")
-	@Ok("jsp:/WEB-INF/moban${obj}/case${obj}")
-	public String tesModel(String model){
-		return model;
-	}
+
 }

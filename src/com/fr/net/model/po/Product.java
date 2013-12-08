@@ -3,21 +3,23 @@ package com.fr.net.model.po;
 import java.io.Serializable;
 
 import org.nutz.dao.entity.annotation.Column;
-import org.nutz.dao.entity.annotation.Id;
+import org.nutz.dao.entity.annotation.Name;
 import org.nutz.dao.entity.annotation.Table;
 
 @Table("tb_product")
 public class Product implements Serializable{
 	
 	private static final long serialVersionUID = 1L;
-	@Id
+	@Column
+	@Name
 	private String productid;
 	@Column
-	private String title;  //标题
+	private String title;  
 	@Column
-	private String content; //内容
+	private String content; 
+	 @Name
 	@Column
-	private String moduleid; //模版id
+	private String moduleid; 
 	@Column
 	private String imageurl ;
 	public String getProductid() {
